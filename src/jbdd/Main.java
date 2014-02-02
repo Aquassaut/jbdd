@@ -29,10 +29,20 @@ public class Main {
         assert 2 == idc2:"La méthode devrait retourner l'id après insertion";
 
         client3 = um.read(conn, client1.get_id());
-        assert client1.get_id() == client3.get_id() &&
-                client1.get_name().equals(client3.get_name()) &&
-                client1.get_password().equals(client3.get_password()) :
-                "Les clients 1 et 3 devrait être identiques";
+        assert client1.equals(client3) : "Les clients 1 et 3 devrait être identiques";
+
+        List<ClientBean> allClients = um.readAll(conn);
+        assert allClients.get(0).equals(client1) && allClients.get(1).equals(client2) :
+                "Les deux premiers clients devraient être ceux que l'on vient de créer";
+
+
+        client3.set_name("Hosni");
+        um.update(conn, client1.get_id(), client3);
+        assert ! client1.equals(um.read(conn, client1.get_id())):
+                "Le client 1 devrait avoir changé";
+
+
+
         return Arrays.asList(client1, client2);
     }
 

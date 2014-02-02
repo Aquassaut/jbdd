@@ -3,6 +3,7 @@ package jbdd;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ClientManager implements Queryable<ClientBean> {
@@ -10,7 +11,7 @@ public class ClientManager implements Queryable<ClientBean> {
     private ResultSet _rs;
 
     public boolean createTable(Connection conn) {
-        boolean success = true;
+        boolean success;
         String lastStep = "Before connection";
         try {
             String sql = "drop table if exists client";
@@ -53,7 +54,7 @@ public class ClientManager implements Queryable<ClientBean> {
             res = _rs.getInt(1); //la premiere colonne est l'id
             table.set_id(res);
         } catch (Exception e) {
-            System.err.println("Problem encountered inserting a user");
+            System.err.println("Problem encountered inserting a client");
             e.printStackTrace();
         }
         return res;
@@ -77,7 +78,7 @@ public class ClientManager implements Queryable<ClientBean> {
             table.set_name(_rs.getString(2));
             table.set_password(_rs.getString(3));
         } catch (Exception e) {
-            System.err.println("Problem encountered inserting a user");
+            System.err.println("Problem encountered reading a client");
             e.printStackTrace();
         }
 		return table;
@@ -85,8 +86,29 @@ public class ClientManager implements Queryable<ClientBean> {
 
 	@Override
 	public List<ClientBean> readAll(Connection conn) {
-		// TODO Auto-generated method stub
-		return null;
+        ArrayList<ClientBean> clients = null;
+        try {
+            String sql = "select client_id, client_name, client_password " +
+                    "from client ";
+            _pstm = conn.prepareStatement(sql);
+            _rs = _pstm.executeQuery();
+
+            if (! _rs.next()) {
+                throw new RuntimeException("Failed to read all clients");
+            }
+            clients = new ArrayList<ClientBean>();
+            do {
+                ClientBean table = new ClientBean();
+                table.set_id(_rs.getInt(1));
+                table.set_name(_rs.getString(2));
+                table.set_password(_rs.getString(3));
+                clients.add(table);
+            } while (_rs.next());
+        } catch (Exception e) {
+            System.err.println("Problem encountered getting all client");
+            e.printStackTrace();
+        }
+		return clients;
 	}
 
 	@Override

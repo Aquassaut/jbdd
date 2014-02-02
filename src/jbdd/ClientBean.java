@@ -45,4 +45,18 @@ public class ClientBean implements Serializable {
     public void set_password(String _password) {
         this._password = _password;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ClientBean that = (ClientBean) o;
+
+        if (_id != that._id) return false;
+        if (_name != null ? !_name.equals(that._name) : that._name != null) return false;
+        if (_password != null ? !_password.equals(that._password) : that._password != null) return false;
+
+        return true;
+    }
 }
