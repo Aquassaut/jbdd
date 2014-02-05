@@ -2,29 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f90a9526-3d89-4435-a6ec-552e99b3f407" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/ClientBean.java" afterPath="$PROJECT_DIR$/src/jbdd/ClientBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jbdd/SaleManager.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jbdd/OrderManager.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jbdd/OrderBean.java" afterPath="$PROJECT_DIR$/src/jbdd/SaleBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/ArticleBean.java" afterPath="$PROJECT_DIR$/src/jbdd/ArticleBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/ArticleManager.java" afterPath="$PROJECT_DIR$/src/jbdd/ArticleManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/BasketBean.java" afterPath="$PROJECT_DIR$/src/jbdd/BasketBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/BasketManager.java" afterPath="$PROJECT_DIR$/src/jbdd/BasketManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/CategoryManager.java" afterPath="$PROJECT_DIR$/src/jbdd/CategoryManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/ClientManager.java" afterPath="$PROJECT_DIR$/src/jbdd/ClientManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/Main.java" afterPath="$PROJECT_DIR$/src/jbdd/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/Singleton.java" afterPath="$PROJECT_DIR$/src/jbdd/Singleton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jbdd.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391119432135" ignored="false" />
+    <file path="/fragment.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391608908120" ignored="false" />
     <file path="/ArticleBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1390655026050" ignored="false" />
     <file path="/Table.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1390652156373" ignored="false" />
     <file path="/a.dummy" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1390665804267" ignored="false" />
-    <file path="/BasketBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391103114022" ignored="false" />
+    <file path="/BasketBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391616570498" ignored="false" />
     <file path="/CategoryBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1390655243953" ignored="false" />
-    <file path="/ArticleManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1390672522044" ignored="false" />
+    <file path="/ArticleManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391536881732" ignored="false" />
     <file path="/CategoryManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1390654442224" ignored="false" />
-    <file path="/OrderBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1390666225271" ignored="false" />
+    <file path="/OrderBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391617945612" ignored="false" />
     <file path="/UserBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1390668017046" ignored="false" />
-    <file path="/BasketManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391104024831" ignored="false" />
+    <file path="/BasketManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391623373048" ignored="false" />
     <file path="/UserManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391115053776" ignored="false" />
-    <file path="/Main.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391299172374" ignored="false" />
-    <file path="/ClientManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391287620689" ignored="false" />
-    <file path="/Dummy.txt" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391300072908" ignored="false" />
+    <file path="/Main.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391626601784" ignored="false" />
+    <file path="/ClientManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391536347280" ignored="false" />
+    <file path="/Dummy.txt" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391603976371" ignored="false" />
     <file path="/ClientBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391286946711" ignored="false" />
+    <file path="/SaleManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391617879371" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,23 +98,73 @@
     <favorites_list name="jbdd" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49214977">
+    <splitter split-orientation="horizontal" split-proportion="0.3626894">
       <split-first>
         <leaf>
-          <file leaf-file-name="BasketManager.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/jbdd/BasketManager.java">
+          <file leaf-file-name="ArticleManager.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/jbdd/ArticleManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="0" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
+                <state line="26" column="61" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CategoryManager.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/jbdd/CategoryManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="28" column="62" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ClientManager.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="SaleManager.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/jbdd/SaleManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="36" column="63" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#2650#2663#0" expanded="true" />
+                    <element signature="e#5103#5123#0" expanded="true" />
+                    <element signature="e#5214#5223#0" expanded="true" />
+                    <element signature="e#5406#5419#0" expanded="true" />
+                    <element signature="e#6023#6033#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Singleton.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/jbdd/Singleton.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="84" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ClientManager.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jbdd/ClientManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="23" selection-start="357" selection-end="357" vertical-scroll-proportion="0.015300547">
+                <state line="16" column="60" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BasketManager.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/jbdd/BasketManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="74" column="42" selection-start="2420" selection-end="2420" vertical-scroll-proportion="0.51704544">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#2733#2746#0" expanded="true" />
+                    <element signature="e#4973#4993#0" expanded="true" />
+                    <element signature="e#5901#5913#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -114,38 +173,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="ArticleBean.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/jbdd/ArticleBean.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ClientBean.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/jbdd/ClientBean.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="57" column="17" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/jbdd/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="63" column="4" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.84153">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Singleton.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/jbdd/Singleton.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="23" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
-                  <folding />
+                <state line="223" column="9" selection-start="7499" selection-end="7499" vertical-scroll-proportion="0.8939394">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#addCategories#0;class#Main#0" expanded="false" />
+                    <element signature="e#4002#4016#0" expanded="true" />
+                    <element signature="method#addArticles#0;class#Main#0" expanded="false" />
+                    <element signature="e#4258#4271#0" expanded="true" />
+                    <element signature="method#displayArticlesTopLeastExpensive#0;class#Main#0" expanded="false" />
+                    <element signature="e#6247#6259#0" expanded="true" />
+                    <element signature="e#7146#7159#0" expanded="true" />
+                    <element signature="e#7812#7825#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -153,7 +195,7 @@
           <file leaf-file-name="BasketBean.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jbdd/BasketBean.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="34" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+                <state line="46" column="0" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -179,28 +221,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/jbdd/Client.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/Table.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/CategoryManager.java" />
         <option value="$PROJECT_DIR$/src/jbdd/CategoryBean.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/OrderBean.java" />
         <option value="$PROJECT_DIR$/src/jbdd/ArticleBean.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/ArticleManager.java" />
         <option value="$PROJECT_DIR$/src/jbdd/UserBean.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/BasketBean.java" />
         <option value="$PROJECT_DIR$/src/jbdd/UserManager.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/BasketManager.java" />
         <option value="$PROJECT_DIR$/src/jbdd/ClientBean.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/Main.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/Singleton.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/BasketBean.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/OrderBean.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/OrderManager.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/SaleBean.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/SaleManager.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/CategoryManager.java" />
         <option value="$PROJECT_DIR$/src/jbdd/ClientManager.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/ArticleManager.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/BasketManager.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="3" />
-    <option name="y" value="18" />
-    <option name="width" value="1914" />
-    <option name="height" value="1059" />
+    <option name="y" value="17" />
+    <option name="width" value="1274" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -261,7 +305,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -328,7 +372,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,12 +394,6 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -454,7 +492,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="jbdd" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -493,32 +537,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="18" width="1914" height="1059" extended-state="0" />
-    <editor active="false" />
+    <frame x="3" y="17" width="1274" height="780" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15952891" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15952891" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5159332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.113490365" sideWeight="0.67021275" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25851065" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14006515" sideWeight="0.6616085" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3383915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -589,115 +633,132 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/jbdd/OrderManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/ClientBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="3" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jbdd/ClientManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/Singleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="16" column="60" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jbdd/ArticleManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="53" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
+        <state line="26" column="61" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jbdd/Singleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="84" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/OrderManager.java">
+    <entry file="jar://$PROJECT_DIR$/libs/commons-dbcp-all-1.3-r699049.jar!/org/apache/commons/dbcp/PoolingDataSource.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.14499424">
+        <state line="82" column="20" selection-start="3994" selection-end="3994" vertical-scroll-proportion="-4.72">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/OrderBean.java">
+    <entry file="file://$PROJECT_DIR$/src/jbdd/SaleBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="3" selection-start="999" selection-end="999" vertical-scroll-proportion="0.712984">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/CategoryManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="725" selection-end="725" vertical-scroll-proportion="0.35079727">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/CategoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="49" selection-start="252" selection-end="252" vertical-scroll-proportion="0.16867469">
+        <state line="40" column="14" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jbdd/BasketBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="34" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+        <state line="46" column="0" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="19" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar!/java/util/AbstractCollection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="16" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar!/java/util/AbstractList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="16" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar!/java/lang/Math.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="22" selection-start="2579" selection-end="2579" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar!/java/util/Arrays.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="27" selection-start="7982" selection-end="7982" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar!/java/util/ArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="19" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar!/java/lang/ThreadGroup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="17" selection-start="3226" selection-end="3226" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar!/java/lang/Thread.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="24" selection-start="7663" selection-end="7663" vertical-scroll-proportion="3.8871596">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jbdd/BasketManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/Singleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/ArticleBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/ClientBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="17" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/ClientManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="357" selection-end="357" vertical-scroll-proportion="0.015300547">
-          <folding />
+        <state line="74" column="42" selection-start="2420" selection-end="2420" vertical-scroll-proportion="0.51704544">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2733#2746#0" expanded="true" />
+            <element signature="e#4973#4993#0" expanded="true" />
+            <element signature="e#5901#5913#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jbdd/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="4" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.84153">
-          <folding />
+        <state line="223" column="9" selection-start="7499" selection-end="7499" vertical-scroll-proportion="0.8939394">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addCategories#0;class#Main#0" expanded="false" />
+            <element signature="e#4002#4016#0" expanded="true" />
+            <element signature="method#addArticles#0;class#Main#0" expanded="false" />
+            <element signature="e#4258#4271#0" expanded="true" />
+            <element signature="method#displayArticlesTopLeastExpensive#0;class#Main#0" expanded="false" />
+            <element signature="e#6247#6259#0" expanded="true" />
+            <element signature="e#7146#7159#0" expanded="true" />
+            <element signature="e#7812#7825#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

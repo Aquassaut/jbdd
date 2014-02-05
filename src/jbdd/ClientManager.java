@@ -14,13 +14,13 @@ public class ClientManager implements Queryable<ClientBean> {
         boolean success;
         String lastStep = "Before connection";
         try {
-            String sql = "drop table if exists client";
+            String sql = "drop table if exists client cascade";
             _pstm = conn.prepareStatement(sql);
             lastStep = "dropping table";
             _pstm.execute();
 
             sql = "create table client (" +
-                    "client_id serial," +
+                    "client_id serial PRIMARY KEY," +
                     "client_name varchar(20)," +
                     "client_password varchar(20)" +
                   ")";
@@ -113,14 +113,40 @@ public class ClientManager implements Queryable<ClientBean> {
 
 	@Override
 	public int update(Connection conn, int key, ClientBean table) {
-		// TODO Auto-generated method stub
-		return 0;
+        int affected = -1;
+        try {
+            String sql = "update client set " +
+                         "client_id = ?," +
+                         "client_name = ?, " +
+                         "client_password = ?" +
+                         "where client_id = ?";
+            _pstm = conn.prepareStatement(sql);
+            int i = 0;
+            _pstm.setInt(++i, table.get_id());
+            _pstm.setString(++i, table.get_name());
+            _pstm.setString(++i, table.get_password());
+            _pstm.setInt(++i, key);
+            affected = _pstm.executeUpdate();
+        } catch (Exception e) {
+            System.err.println("Problem encountered updating a client");
+            e.printStackTrace();
+        }
+		return affected;
 	}
 
 	@Override
 	public int delete(Connection conn, int key) {
-		// TODO Auto-generated method stub
-		return 0;
+        int affected = -1;
+        try {
+            String sql = "delete from client " +
+                         "where client_id = ?";
+            _pstm = conn.prepareStatement(sql);
+            _pstm.setInt(1, key);
+            affected = _pstm.executeUpdate();
+        } catch (Exception e) {
+            System.err.println("Problem encountered updating a client");
+            e.printStackTrace();
+        }
+		return affected;
 	}
-
 }

@@ -7,7 +7,7 @@ import org.apache.commons.dbcp.BasicDataSource;
 public class Singleton {
 
     public static final String JDBC_DRIVER = "org.postgresql.Driver";
-    public static final String JDBC_URL = "jdbc:postgresql://aquassaut.pwnz.org/jbdd";
+    public static final String JDBC_URL = "jdbc:postgresql://aquassaut.pwnz.org:10000/jbdd";
     public static final String USERNAME = "jbdd";
     public static final String PASSWORD = "jbdd";
 

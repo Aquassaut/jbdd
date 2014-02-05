@@ -20,6 +20,14 @@ public class ArticleBean implements Serializable {
         _idCategory = idCategory;
     }
 
+    public int get_id() {
+        return _id;
+    }
+
+    public void set_id(int id) {
+        this._id = id;
+    }
+
     public String get_name() {
         return _name;
     }

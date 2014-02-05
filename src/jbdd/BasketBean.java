@@ -12,14 +12,14 @@ import java.util.List;
  */
 public class BasketBean implements Serializable {
     private int _id;
-    private ClientBean _user;
+    private int _client;
     private List<ArticleBean> _articles;
 
     public BasketBean() {}
-    public BasketBean(int id, List<ArticleBean> articles, ClientBean user) {
+    public BasketBean(int id, List<ArticleBean> articles, int user) {
         _id = id;
         _articles = articles;
-        _user = user;
+        _client = user;
     }
 
     public List<ArticleBean> get_articles() {
@@ -38,11 +38,11 @@ public class BasketBean implements Serializable {
         this._id = _id;
     }
 
-    public ClientBean get_user() {
-        return _user;
+    public int get_client() {
+        return _client;
     }
 
-    public void set_user(ClientBean _user) {
-        this._user = _user;
+    public void set_client(int _client) {
+        this._client = _client;
     }
 }
