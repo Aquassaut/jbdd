@@ -58,4 +58,5 @@ public class ArticleBean implements Serializable {
     public void set_price(BigDecimal _price) {
         this._price = _price;
     }
+
 }

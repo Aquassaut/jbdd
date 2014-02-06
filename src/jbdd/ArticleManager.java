@@ -12,16 +12,15 @@ public class ArticleManager implements Queryable<ArticleBean> {
     private PreparedStatement _pstm;
     private ResultSet _rs;
 
-    public static final String CREATE_STMT = "" +
+    private static final String CREATE_STMT = "" +
             "create table article ( " +
             "article_id serial PRIMARY KEY, " +
             "article_name varchar(20)," +
             "article_availability int, " +
-            "article_price numeric(5), " +
+            "article_price decimal(10, 2), " +
             "category_id integer references category(category_id))";
 
     public boolean createTable(Connection conn) {
-        boolean success;
         String lastStep = "Before connection";
         try {
             String sql = "drop table if exists article cascade";
@@ -31,14 +30,14 @@ public class ArticleManager implements Queryable<ArticleBean> {
 
             _pstm = conn.prepareStatement(CREATE_STMT);
             lastStep = "recreating table";
-            success = _pstm.execute();
+            _pstm.execute();
         } catch (Exception e) {
             System.err.println("Problem encountered creating article table");
             System.err.println(lastStep);
             e.printStackTrace();
-            success = false;
+            return false;
         }
-        return success;
+        return true;
     }
 
     @Override
@@ -133,10 +132,10 @@ public class ArticleManager implements Queryable<ArticleBean> {
             String sql = "update article set " +
                     "article_id = ?," +
                     "article_name = ?, " +
-                    "article_availability = ?" +
-                    "article_price = ?" +
-                    "category_id = ?" +
-                    "where client_id = ?";
+                    "article_availability = ?, " +
+                    "article_price = ?, " +
+                    "category_id = ? " +
+                    "where article_id = ? ";
             _pstm = conn.prepareStatement(sql);
             int i = 0;
             _pstm.setInt(++i, table.get_id());

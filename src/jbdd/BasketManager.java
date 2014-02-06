@@ -4,26 +4,18 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: aquassaut
- * Date: 1/25/14
- * Time: 12:56 PM
- * To change this template use File | Settings | File Templates.
- */
 public class BasketManager implements Queryable<BasketBean>  {
 
     private PreparedStatement _pstm;
     private ResultSet _rs;
-    public static String CREATE_STMT_MAIN = "" + 
+    private static final String CREATE_STMT_MAIN = "" +
                 "create table basket ( " +
                 "basket_id serial PRIMARY KEY, " +
                 "client_id int references client(client_id) )";
 
-    public static String CREATE_STMT_SEC = "" + 
+    private static final String CREATE_STMT_SEC = "" +
                 "create table contains ( " +
                 "basket_id int references basket(basket_id), " +
                 "article_id int references article(article_id), " +
@@ -31,7 +23,6 @@ public class BasketManager implements Queryable<BasketBean>  {
 
 
     public boolean createTable(Connection conn) {
-        boolean success;
         String lastStep = "Before connection";
         try {
             String sql = "drop table if exists contains cascade";
@@ -47,19 +38,19 @@ public class BasketManager implements Queryable<BasketBean>  {
 
             _pstm = conn.prepareStatement(CREATE_STMT_MAIN);
             lastStep = "recreating table basket";
-            success = _pstm.execute();
+            _pstm.execute();
 
             _pstm = conn.prepareStatement(CREATE_STMT_SEC);
             lastStep = "recreating table contains";
-            success = _pstm.execute();
+            _pstm.execute();
 
         } catch (Exception e) {
             System.err.println("Problem encountered creating basket tables");
             System.err.println(lastStep);
             e.printStackTrace();
-            success = false;
+            return false;
         }
-        return success;
+        return true;
     }
 
 
@@ -83,9 +74,8 @@ public class BasketManager implements Queryable<BasketBean>  {
             table.set_id(res);
 
             ArrayList<ArticleBean> temp = new ArrayList<ArticleBean>();
-            Iterator<ArticleBean> it = table.get_articles().iterator();
-            while(it.hasNext()) {
-                temp.add(it.next());
+            for (ArticleBean ab : table.get_articles()) {
+                temp.add(ab);
             }
 
             sql = "delete from contains where basket_id = ?";
@@ -100,12 +90,13 @@ public class BasketManager implements Queryable<BasketBean>  {
                     quantity += 1;
                     temp.remove(temp.lastIndexOf(ab));
                 }
-                sql = "insert into contains(basket_id, article_id, quantity) "+
+                sql = "insert into contains (basket_id, article_id, quantity) " +
                     "values (?, ?, ?)";
                 _pstm = conn.prepareStatement(sql);
-                _pstm.setInt(1, table.get_id());
-                _pstm.setInt(2, ab.get_id());
-                _pstm.setInt(3, quantity);
+                int i = 0;
+                _pstm.setInt(++i, table.get_id());
+                _pstm.setInt(++i, ab.get_id());
+                _pstm.setInt(++i, quantity);
                 _pstm.executeUpdate();
             }
 
@@ -121,7 +112,7 @@ public class BasketManager implements Queryable<BasketBean>  {
     public BasketBean read(Connection conn, int key) {
         BasketBean table = new BasketBean();
         try {
-            String sql = "select basket_id, client_id" +
+            String sql = "select basket_id, client_id " +
                         "from basket " +
                         "where basket_id = ?";
             _pstm = conn.prepareStatement(sql);
@@ -138,7 +129,6 @@ public class BasketManager implements Queryable<BasketBean>  {
             _pstm = conn.prepareStatement(sql);
             _pstm.setInt(1, key);
             _rs = _pstm.executeQuery();
-
             ArrayList<ArrayList<Integer>> articles = new ArrayList<ArrayList<Integer>>();
             while (_rs.next()) {
                 ArrayList<Integer> art = new ArrayList<Integer>();
@@ -146,6 +136,7 @@ public class BasketManager implements Queryable<BasketBean>  {
                 art.add(_rs.getInt(2));
                 articles.add(art);
             }
+
 
             List<ArticleBean> lab = new ArrayList<ArticleBean>();
             ArticleManager am = new ArticleManager();
@@ -156,8 +147,9 @@ public class BasketManager implements Queryable<BasketBean>  {
                     lab.add(ab);
                 }
             }
+            table.set_articles(lab);
         } catch (Exception e) {
-            System.err.println("Problem encountered reading a category");
+            System.err.println("Problem encountered reading a basket");
             e.printStackTrace();
         }
         return table;
@@ -167,16 +159,16 @@ public class BasketManager implements Queryable<BasketBean>  {
     @Override
     public List<BasketBean> readAll(Connection conn) {
         List<BasketBean> lbb = new ArrayList<BasketBean>();
+        ResultSet outerRs;
         try {
-            String sql = "select basket_id " +
-                        "from basket";
+            String sql = "select basket_id from basket";
             _pstm = conn.prepareStatement(sql);
-            _rs = _pstm.executeQuery();
-            while (_rs.next()) {
-                lbb.add(this.read(conn, _rs.getInt(1)));
+            outerRs = _pstm.executeQuery();
+            while (outerRs.next()) {
+                lbb.add(this.read(conn, outerRs.getInt(1)));
             }
         } catch (Exception e) {
-            System.err.println("Problem encountered reading a category");
+            System.err.println("Problem encountered reading all baskets");
             e.printStackTrace();
         }
         return lbb;
@@ -195,16 +187,17 @@ public class BasketManager implements Queryable<BasketBean>  {
     public int delete(Connection conn, int key) {
         int affected = -1;
         try {
-            String sql = "delete from basket " +
-                         "where basket_id = ?";
+            String sql = "delete from contains " +
+                    "where basket_id = ?";
             _pstm = conn.prepareStatement(sql);
             _pstm.setInt(1, key);
             affected = _pstm.executeUpdate();
 
-            sql = "delete from contains " +
+            sql = "delete from basket " +
                          "where basket_id = ?";
             _pstm = conn.prepareStatement(sql);
             _pstm.setInt(1, key);
+
 
             affected += _pstm.executeUpdate();
 

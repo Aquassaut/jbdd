@@ -2,48 +2,10 @@ package jbdd;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.sql.Date;
+import java.util.*;
 
 public class Main {
-
-    /*
-    public static List<ClientBean> testClient(Connection conn, ClientManager um) throws Exception {
-        ClientBean client1 = new ClientBean();
-        ClientBean client2 = new ClientBean();
-        ClientBean client3;
-        int idc2;
-
-        client1.set_name("meg asin");
-        client1.set_password("1234");
-        client1.set_id(8);
-        um.create(conn, client1);
-        assert 1 == client1.get_id() :
-                "L'id client aurait du être modifié pour refleter la vraie valeur";
-
-        client2.set_name("Gerald labranche");
-        client2.set_password("azerty");
-        idc2 = um.create(conn, client2);
-        assert 2 == idc2:"La méthode devrait retourner l'id après insertion";
-
-        client3 = um.read(conn, client1.get_id());
-        assert client1.equals(client3) : "Les clients 1 et 3 devrait être identiques";
-
-        List<ClientBean> allClients = um.readAll(conn);
-        assert allClients.get(0).equals(client1) && allClients.get(1).equals(client2) :
-                "Les deux premiers clients devraient être ceux que l'on vient de créer";
-
-
-        client3.set_name("Hosni");
-        um.update(conn, client1.get_id(), client3);
-        assert ! client1.equals(um.read(conn, client1.get_id())):
-                "Le client 1 devrait avoir changé";
-
-
-        return Arrays.asList(client1, client2);
-    }
-    */
 
     public static void main(String[] args) {
         //A lancer avec -ea pour obtenir les AssertionError, afin que les tests aient un sens
@@ -75,31 +37,24 @@ public class Main {
             BasketBean bb1 = createBasketUser1(bm, conn, lub, lab);
             BasketBean bb2 = createBasketUser2(bm, conn, lub, lab);
             editBasketUser2(bm, conn, bb2, lab);
-            /*
-            displayBasketUser1();
-            displayBasketUser2();
-            validateBasketUser2();
-            validateBasketUser1();
-            displaySalesUser2();
-            displayArticlesByBestSales();
-              */
-            /*
-            System.out.println("Test client OK");
+            displayBasket(bm, conn, lub.get(0));
+            displayBasket(bm, conn, lub.get(1));
+            validateBasket(om, conn, bb2);
+            validateBasket(om, conn, bb1);
+            displaySalesUser2(om, conn,lub.get(1));
+            displayArticlesByBestSales(om, conn);
 
-            List<ClientBean> clients = testClient(conn, um);
-            System.out.println("Test client OK");
-            */
-
+            System.out.println("Fin de l'exercice");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             try {
-                conn.close();
+                if (conn != null) conn.close();
             } catch (Exception ignore) {}
         }
     }
 
-    public static List<CategoryBean> addCategories(CategoryManager cm, Connection conn) {
+    private static List<CategoryBean> addCategories(CategoryManager cm, Connection conn) {
         //appareil photo, objectifs/zoom
         CategoryBean apPhoto = new CategoryBean();
         CategoryBean objZoom = new CategoryBean();
@@ -119,7 +74,7 @@ public class Main {
         lcb.add(objZoom);
         return lcb;
     }
-    public static List<ArticleBean> addArticles(ArticleManager am, Connection conn, List<CategoryBean> lcb) {
+    private static List<ArticleBean> addArticles(ArticleManager am, Connection conn, List<CategoryBean> lcb) {
         ArrayList<ArticleBean> aab = new ArrayList<ArticleBean>();
         ArticleBean refNum = new ArticleBean();
         ArticleBean kitRefNum = new ArticleBean();
@@ -130,31 +85,31 @@ public class Main {
         refNum.set_name("Reflex Numerique");
         refNum.set_availability(2);
         refNum.set_idCategory(lcb.get(0).get_id());
-        refNum.set_price(new BigDecimal(1600));
+        refNum.set_price(new BigDecimal("1600"));
         aab.add(refNum);
 
         kitRefNum.set_name("Kit Reflex Numerique");
         kitRefNum.set_availability(1);
         kitRefNum.set_idCategory(lcb.get(0).get_id());
-        kitRefNum.set_price(new BigDecimal(530));
+        kitRefNum.set_price(new BigDecimal("530"));
         aab.add(kitRefNum);
 
         zoom.set_name("zoom 24-105");
         zoom.set_availability(5);
         zoom.set_idCategory(lcb.get(1).get_id());
-        zoom.set_price(new BigDecimal(748));
+        zoom.set_price(new BigDecimal("748"));
         aab.add(zoom);
 
         objectif.set_name("objectif 85mm");
         objectif.set_availability(1);
         objectif.set_idCategory(lcb.get(1).get_id());
-        objectif.set_price(new BigDecimal(354.90));
+        objectif.set_price(new BigDecimal("354.9"));
         aab.add(objectif);
 
         filtre.set_name("filtre");
         filtre.set_availability(17);
         filtre.set_idCategory(lcb.get(1).get_id());
-        filtre.set_price(new BigDecimal(17.80));
+        filtre.set_price(new BigDecimal("17.8"));
         aab.add(filtre);
 
         for (ArticleBean bean : aab) {
@@ -169,13 +124,13 @@ public class Main {
 
         return aab;
     }
-    public static void displayArticlesTopLeastExpensive(ArticleManager am, Connection conn) {
+    private static void displayArticlesTopLeastExpensive(ArticleManager am, Connection conn) {
         for (ArticleBean bean : am.readAll(conn)) {
             System.out.println(bean.get_id() + " : " + bean.get_name() +
                     " (" + bean.get_price() + "$)");
         }
     }
-    public static List<ClientBean> createUsers (ClientManager um, Connection conn) {
+    private static List<ClientBean> createUsers (ClientManager um, Connection conn) {
         List<ClientBean> lub = new ArrayList<ClientBean>();
 
         ClientBean user1 = new ClientBean();
@@ -199,8 +154,8 @@ public class Main {
         }
         return lub;
     }
-    public static BasketBean createBasketUser1(BasketManager bm,
-            Connection conn, List<ClientBean> lub, List<ArticleBean> lab) throws Exception {
+    private static BasketBean createBasketUser1(BasketManager bm,
+            Connection conn, List<ClientBean> lub, List<ArticleBean> lab) {
 
         BasketBean bb1 = new BasketBean();
         bb1.set_client(lub.get(0).get_id());
@@ -220,7 +175,7 @@ public class Main {
         }
         return bb1;
     }
-    public static BasketBean createBasketUser2(BasketManager bm,
+    private static BasketBean createBasketUser2(BasketManager bm,
                Connection conn, List<ClientBean> lub, List<ArticleBean> lab) {
         BasketBean bb2 = new BasketBean();
         bb2.set_client(lub.get(1).get_id());
@@ -242,7 +197,89 @@ public class Main {
         return bb2;
     }
 
-    public static void editBasketUser2(BasketManager bm, Connection conn, BasketBean bb2, List<ArticleBean> lab) {
-        //pass
+    private static void editBasketUser2(BasketManager bm, Connection conn, BasketBean bb2, List<ArticleBean> lab) {
+        List<ArticleBean> articles = bb2.get_articles();
+        articles.remove(lab.get(4));
+        articles.add(lab.get(0));
+        bb2.set_articles(articles);
+        bm.update(conn, bb2.get_id(), bb2);
+
+        try {
+            conn.commit();
+        } catch (Exception e) {
+            System.err.println("Basket 2 !");
+            e.printStackTrace();
+        }
     }
+    private static void displayBasket(BasketManager bm, Connection conn, ClientBean user) {
+        List<BasketBean> baskets = bm.readAll(conn);
+        for (BasketBean bb : baskets) {
+            if (bb.get_client() == user.get_id()) {
+                System.out.println("Panier numéro " + bb.get_id() + " du client " + user.get_id());
+                for (ArticleBean ab : bb.get_articles()) {
+                    System.out.println(ab.get_id() + " : " + ab.get_name() + " (" + ab.get_price() + "$)");
+                }
+            }
+        }
+    }
+    private static SaleBean validateBasket(SaleManager om, Connection conn, BasketBean bb) {
+        SaleBean sb = new SaleBean();
+        sb.set_articles(bb.get_articles());
+        sb.set_client(bb.get_client());
+        sb.set_date(new Date(java.util.Calendar.getInstance().getTimeInMillis()));
+        BigDecimal price = new BigDecimal(0);
+        for (ArticleBean a : bb.get_articles()) {
+            price = price.add(a.get_price());
+        }
+        sb.set_price(price);
+
+        om.create(conn, sb);
+        try {
+            conn.commit();
+        } catch (Exception e) {
+            System.err.println("Sase user " + bb.get_client() + " !");
+            e.printStackTrace();
+        }
+        return sb;
+    }
+    private static void displaySalesUser2(SaleManager om, Connection conn, ClientBean ub) {
+        List<SaleBean> lsb = om.readAll(conn);
+        for (SaleBean sb : lsb) {
+            if (sb.get_client() == ub.get_id()) {
+                System.out.println("Vente n° " + sb.get_id() + " du client " + ub.get_id() + " pour " + sb.get_price() +
+                "$ le " + sb.get_date());
+                for (ArticleBean ab : sb.get_articles()) {
+                    System.out.println(ab.get_id() + " : " + ab.get_name() + " (" + ab.get_price() + "$)");
+                }
+            }
+        }
+    }
+
+    private static void displayArticlesByBestSales(SaleManager om, Connection conn) {
+        List<SaleBean> lsb = om.readAll(conn);
+        final HashMap<Integer, Integer> idsAndQuantity = new HashMap<Integer, Integer>();
+        List<ArticleBean> allArticles = new ArrayList<ArticleBean>();
+        for (SaleBean sb : lsb) {
+            for (ArticleBean ab : sb.get_articles()) {
+                if (! idsAndQuantity.containsKey(ab.get_id())) {
+                    idsAndQuantity.put(ab.get_id(), 1);
+                    allArticles.add(ab);
+                } else {
+                    idsAndQuantity.put(ab.get_id(), idsAndQuantity.get(ab.get_id()) + 1);
+                }
+            }
+        }
+        Collections.sort(allArticles, new Comparator<ArticleBean>() {
+            @Override
+            public int compare(ArticleBean a1, ArticleBean a2) {
+                return idsAndQuantity.get(a2.get_id()).compareTo(idsAndQuantity.get(a1.get_id()));
+            }
+        });
+
+        System.out.println("Les meilleures ventes : ");
+        for (ArticleBean ab : allArticles) {
+            System.out.println(idsAndQuantity.get(ab.get_id()) + " vendus : " + ab.get_id() + " : " + ab.get_name() + " (" + ab.get_price() + "$)");
+        }
+    }
+
 }

@@ -11,7 +11,6 @@ public class ClientManager implements Queryable<ClientBean> {
     private ResultSet _rs;
 
     public boolean createTable(Connection conn) {
-        boolean success;
         String lastStep = "Before connection";
         try {
             String sql = "drop table if exists client cascade";
@@ -26,14 +25,14 @@ public class ClientManager implements Queryable<ClientBean> {
                   ")";
             _pstm = conn.prepareStatement(sql);
             lastStep = "recreating table";
-            success = _pstm.execute();
+            _pstm.execute();
         } catch (Exception e) {
             System.err.println("Problem encountered creating client table");
             System.err.println(lastStep);
             e.printStackTrace();
-            success = false;
+            return false;
         }
-        return success;
+        return true;
     }
 
 	@Override

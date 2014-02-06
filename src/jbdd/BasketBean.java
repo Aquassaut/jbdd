@@ -3,13 +3,6 @@ package jbdd;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: aquassaut
- * Date: 1/25/14
- * Time: 12:54 PM
- * To change this template use File | Settings | File Templates.
- */
 public class BasketBean implements Serializable {
     private int _id;
     private int _client;
@@ -45,4 +38,6 @@ public class BasketBean implements Serializable {
     public void set_client(int _client) {
         this._client = _client;
     }
+
+
 }

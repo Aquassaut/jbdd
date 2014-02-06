@@ -6,15 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-/**
- * Created with IntelliJ IDEA.
- * User: aquassaut
- * Date: 1/25/14
- * Time: 12:57 PM
- * To change this template use File | Settings | File Templates.
- */
 public class CategoryManager implements Queryable<CategoryBean> {
-    public static final String CREATE_STMT = "" +
+    private static final String CREATE_STMT = "" +
             "create table category ( " +
             "category_id serial PRIMARY KEY," +
             "category_name varchar(20))";
@@ -23,7 +16,6 @@ public class CategoryManager implements Queryable<CategoryBean> {
     private ResultSet _rs;
 
     public boolean createTable(Connection conn) {
-        boolean success;
         String lastStep = "Before connection";
         try {
             String sql = "drop table if exists category cascade";
@@ -33,15 +25,15 @@ public class CategoryManager implements Queryable<CategoryBean> {
 
             _pstm = conn.prepareStatement(CREATE_STMT);
             lastStep = "recreating table";
-            success = _pstm.execute();
+            _pstm.execute();
 
         } catch (Exception e) {
             System.err.println("Problem encountered creating category table");
             System.err.println(lastStep);
             e.printStackTrace();
-            success = false;
+            return false;
         }
-        return success;
+        return true;
     }
 
     @Override
@@ -71,7 +63,7 @@ public class CategoryManager implements Queryable<CategoryBean> {
     public CategoryBean read(Connection conn, int key) {
         CategoryBean table = new CategoryBean();
         try {
-            String sql = "select category_id, category_name" +
+            String sql = "select category_id, category_name " +
                     "from category " +
                     "where category_id = ?";
             _pstm = conn.prepareStatement(sql);

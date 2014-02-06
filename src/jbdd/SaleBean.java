@@ -6,13 +6,6 @@ import java.sql.Date;
 import java.util.Calendar;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: aquassaut
- * Date: 1/25/14
- * Time: 12:51 PM
- * To change this template use File | Settings | File Templates.
- */
 public class SaleBean implements Serializable {
     private int _id;
     private Date _date;

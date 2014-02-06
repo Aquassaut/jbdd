@@ -5,25 +5,18 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.*;
 
-/**
- * Created with IntelliJ IDEA.
- * User: aquassaut
- * Date: 1/25/14
- * Time: 12:56 PM
- * To change this template use File | Settings | File Templates.
- */
 public class SaleManager implements Queryable<SaleBean>  {
 
     private PreparedStatement _pstm;
     private ResultSet _rs;
-    public static String CREATE_STMT_MAIN = "" + 
+    private static final String CREATE_STMT_MAIN = "" +
                 "create table sale ( " +
                 "sale_id serial PRIMARY KEY, " +
                 "sale_date date, " +
-                "sale_price real, " + 
+                "sale_price decimal(10, 2), " +
                 "client_id int references client(client_id) )";
 
-    public static String CREATE_STMT_SEC = "" + 
+    private static final String CREATE_STMT_SEC = "" +
                 "create table purchased ( " +
                 "sale_id int references sale(sale_id), " +
                 "article_id int references article(article_id), " +
@@ -31,7 +24,6 @@ public class SaleManager implements Queryable<SaleBean>  {
 
 
     public boolean createTable(Connection conn) {
-        boolean success;
         String lastStep = "Before connection";
         try {
             String sql = "drop table if exists purchased cascade";
@@ -47,19 +39,19 @@ public class SaleManager implements Queryable<SaleBean>  {
 
             _pstm = conn.prepareStatement(CREATE_STMT_MAIN);
             lastStep = "recreating table sale";
-            success = _pstm.execute();
+            _pstm.execute();
 
             _pstm = conn.prepareStatement(CREATE_STMT_SEC);
             lastStep = "recreating table purchased";
-            success = success && _pstm.execute();
+            _pstm.execute();
 
         } catch (Exception e) {
             System.err.println("Problem encountered creating sale tables");
             System.err.println(lastStep);
             e.printStackTrace();
-            success = false;
+            return false;
         }
-        return success;
+        return true;
     }
 
 
@@ -75,21 +67,27 @@ public class SaleManager implements Queryable<SaleBean>  {
             _pstm.setBigDecimal(2, table.get_price());
             _pstm.setInt(3, table.get_client());
             lastStep = "Executing update";
-            res = _pstm.executeUpdate();
+            _pstm.executeUpdate();
+            _rs = _pstm.getGeneratedKeys();
+
+            if (! _rs.next()) {
+                throw new Exception("pas de clé pour le sale");
+            }
+            res = _rs.getInt(1);
+            table.set_id(res);
+
 
             ArrayList<ArticleBean> temp = new ArrayList<ArticleBean>();
-            Iterator<ArticleBean> it = table.get_articles().iterator();
-            while(it.hasNext()) {
-                temp.add(it.next());
+            for (ArticleBean ab : table.get_articles()) {
+                temp.add(ab);
             }
 
-            sql = "delete * from purchased where sale_id = ?";
+            sql = "delete from purchased where sale_id = ?";
             _pstm = conn.prepareStatement(sql);
             _pstm.setInt(1, table.get_id());
             _pstm.executeUpdate();
 
             while (0 != temp.size()) {
-                int index = -1;
                 int quantity = 0;
                 ArticleBean ab = temp.get(0);
                 while (temp.contains(ab)) {
@@ -103,7 +101,13 @@ public class SaleManager implements Queryable<SaleBean>  {
                 _pstm.setInt(2, ab.get_id());
                 _pstm.setInt(3, quantity);
                 _pstm.executeUpdate();
+
+                ArticleManager am = new ArticleManager();
+                ab.set_availability(ab.get_availability() - quantity);
+                am.update(conn, ab.get_id(), ab);
             }
+
+
 
             if (0 >= res) {
                 throw new Exception();
@@ -112,10 +116,6 @@ public class SaleManager implements Queryable<SaleBean>  {
             System.err.println("Problem encountered inserting a sale with ID " + table.get_id());
             System.err.println(lastStep);
             e.printStackTrace();
-        } finally {
-            try {
-                conn.close();
-            } catch (Exception ignore) {}
         }
         return res;
     }
@@ -124,7 +124,7 @@ public class SaleManager implements Queryable<SaleBean>  {
     public SaleBean read(Connection conn, int key) {
         SaleBean table = new SaleBean();
         try {
-            String sql = "select sale_id, sale_date, sale_price, client_id" +
+            String sql = "select sale_id, sale_date, sale_price, client_id " +
                         "from sale " +
                         "where sale_id = ?";
             _pstm = conn.prepareStatement(sql);
@@ -161,6 +161,7 @@ public class SaleManager implements Queryable<SaleBean>  {
                     lab.add(ab);
                 }
             }
+            table.set_articles(lab);
         } catch (Exception e) {
             System.err.println("Problem encountered reading a sale");
             e.printStackTrace();
@@ -172,13 +173,14 @@ public class SaleManager implements Queryable<SaleBean>  {
     @Override
     public List<SaleBean> readAll(Connection conn) {
         List<SaleBean> lbb = new ArrayList<SaleBean>();
+        ResultSet outerRs;
         try {
             String sql = "select sale_id " +
                         "from sale";
             _pstm = conn.prepareStatement(sql);
-            _rs = _pstm.executeQuery();
-            while (_rs.next()) {
-                lbb.add(this.read(conn, _rs.getInt(1)));
+            outerRs = _pstm.executeQuery();
+            while (outerRs.next()) {
+                lbb.add(this.read(conn, outerRs.getInt(1)));
             }
         } catch (Exception e) {
             System.err.println("Problem encountered reading all sales");
