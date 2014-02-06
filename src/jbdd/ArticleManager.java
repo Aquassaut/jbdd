@@ -126,7 +126,10 @@ public class ArticleManager implements Queryable<ArticleBean> {
     }
 
     @Override
-    public int update(Connection conn, int key, ArticleBean table) {
+    public int update(Connection conn, int key, ArticleBean table) throws ArticleNotAvailableException{
+        if (table.get_availability() < 0) {
+            throw new ArticleNotAvailableException();
+        }
         int affected = -1;
         try {
             String sql = "update article set " +

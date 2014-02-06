@@ -217,6 +217,7 @@ public class Main {
             if (bb.get_client() == user.get_id()) {
                 System.out.println("Panier numéro " + bb.get_id() + " du client " + user.get_id());
                 for (ArticleBean ab : bb.get_articles()) {
+                    //J'ai pas la touche euro sur le clavier... ça sera des dollars
                     System.out.println(ab.get_id() + " : " + ab.get_name() + " (" + ab.get_price() + "$)");
                 }
             }
@@ -281,5 +282,4 @@ public class Main {
             System.out.println(idsAndQuantity.get(ab.get_id()) + " vendus : " + ab.get_id() + " : " + ab.get_name() + " (" + ab.get_price() + "$)");
         }
     }
-
 }

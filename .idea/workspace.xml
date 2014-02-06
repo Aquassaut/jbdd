@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f90a9526-3d89-4435-a6ec-552e99b3f407" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/ArticleBean.java" afterPath="$PROJECT_DIR$/src/jbdd/ArticleBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/ArticleManager.java" afterPath="$PROJECT_DIR$/src/jbdd/ArticleManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/BasketBean.java" afterPath="$PROJECT_DIR$/src/jbdd/BasketBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/BasketManager.java" afterPath="$PROJECT_DIR$/src/jbdd/BasketManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/CategoryBean.java" afterPath="$PROJECT_DIR$/src/jbdd/CategoryBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/CategoryManager.java" afterPath="$PROJECT_DIR$/src/jbdd/CategoryManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/ClientBean.java" afterPath="$PROJECT_DIR$/src/jbdd/ClientBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/ClientManager.java" afterPath="$PROJECT_DIR$/src/jbdd/ClientManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/Main.java" afterPath="$PROJECT_DIR$/src/jbdd/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/Queryable.java" afterPath="$PROJECT_DIR$/src/jbdd/Queryable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/SaleBean.java" afterPath="$PROJECT_DIR$/src/jbdd/SaleBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/SaleManager.java" afterPath="$PROJECT_DIR$/src/jbdd/SaleManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jbdd/Singleton.java" afterPath="$PROJECT_DIR$/src/jbdd/Singleton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jbdd.iws" />
@@ -26,19 +17,21 @@
     <file path="/a.dummy" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1390665804267" ignored="false" />
     <file path="/BasketBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391616570498" ignored="false" />
     <file path="/CategoryBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1390655243953" ignored="false" />
-    <file path="/ArticleManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391704119580" ignored="false" />
+    <file path="/ArticleManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391708376588" ignored="false" />
     <file path="/CategoryManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391704145022" ignored="false" />
     <file path="/OrderBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391617945612" ignored="false" />
     <file path="/UserBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1390668017046" ignored="false" />
-    <file path="/BasketManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391704136257" ignored="false" />
+    <file path="/BasketManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391707997374" ignored="false" />
     <file path="/UserManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391115053776" ignored="false" />
-    <file path="/Main.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391704224474" ignored="false" />
+    <file path="/Main.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391705439725" ignored="false" />
     <file path="/ClientManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391695805287" ignored="false" />
-    <file path="/Dummy.txt" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391703695504" ignored="false" />
+    <file path="/Dummy.txt" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391709727598" ignored="false" />
     <file path="/ClientBean.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391286946711" ignored="false" />
-    <file path="/SaleManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391704325421" ignored="false" />
+    <file path="/SaleManager.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391709331789" ignored="false" />
     <file path="/postgresBBB" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391702405388" ignored="false" />
     <file path="/Singleton.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391704431116" ignored="false" />
+    <file path="/ArticleNotAvailableException.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391708106955" ignored="false" />
+    <file path="/Queryable.java" changelist="f90a9526-3d89-4435-a6ec-552e99b3f407" time="1391708388027" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,23 +96,32 @@
     <favorites_list name="jbdd" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.34221902">
+    <splitter split-orientation="horizontal" split-proportion="0.4610951">
       <split-first>
         <leaf>
           <file leaf-file-name="ArticleManager.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jbdd/ArticleManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="10" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
+                <state line="131" column="8" selection-start="4804" selection-end="4804" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <marker date="1391704238767" expanded="true" signature="335:625" placeholder="create table..article..." />
-                    <marker date="1391704238767" expanded="true" signature="766:802" placeholder="drop table i..." />
-                    <marker date="1391704238767" expanded="true" signature="1437:1584" placeholder="insert into ..." />
-                    <marker date="1391704238767" expanded="true" signature="2568:2746" placeholder="select artic..article..." />
-                    <marker date="1391704238767" expanded="true" signature="3575:3734" placeholder="select artic..article..." />
-                    <marker date="1391704238767" expanded="true" signature="4730:5013" placeholder="update artic..." />
-                    <marker date="1391704238767" expanded="true" signature="5751:5816" placeholder="delete from ..." />
+                    <marker date="1391708378564" expanded="true" signature="335:625" placeholder="create table..article..." />
+                    <marker date="1391708378564" expanded="true" signature="766:802" placeholder="drop table i..." />
+                    <marker date="1391708378564" expanded="true" signature="1437:1584" placeholder="insert into ..." />
+                    <marker date="1391708378564" expanded="true" signature="2568:2746" placeholder="select artic..article..." />
+                    <marker date="1391708378564" expanded="true" signature="3575:3734" placeholder="select artic..article..." />
+                    <marker date="1391708378564" expanded="true" signature="4873:5156" placeholder="update artic..." />
+                    <marker date="1391708378564" expanded="true" signature="5894:5959" placeholder="delete from ..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Queryable.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/jbdd/Queryable.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="10" column="24" selection-start="392" selection-end="392" vertical-scroll-proportion="0.22183098">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -144,30 +146,42 @@
           <file leaf-file-name="SaleManager.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jbdd/SaleManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="32" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
+                <state line="266" column="0" selection-start="9933" selection-end="9933" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="e#2665#2678#0" expanded="true" />
-                    <marker date="1391704360257" expanded="true" signature="302:542" placeholder="create table..sale..." />
-                    <marker date="1391704360257" expanded="true" signature="597:805" placeholder="create table..purchased..." />
-                    <marker date="1391704360257" expanded="true" signature="947:985" placeholder="drop table i..." />
-                    <marker date="1391704360257" expanded="true" signature="1136:1161" placeholder="drop table i..." />
-                    <marker date="1391704360257" expanded="true" signature="2000:2068" placeholder="insert into ..." />
-                    <marker date="1391704360257" expanded="true" signature="2804:2843" placeholder="delete from ..." />
-                    <marker date="1391704360257" expanded="true" signature="3269:3362" placeholder="insert into ..." />
-                    <marker date="1391704360257" expanded="true" signature="4262:4396" placeholder="select sale_..sale..." />
-                    <marker date="1391704360257" expanded="true" signature="4850:4910" placeholder="select artic..purchased..." />
-                    <marker date="1391704360257" expanded="true" signature="6140:6193" placeholder="select sale_..sale..." />
-                    <marker date="1391704360257" expanded="true" signature="7001:7065" placeholder="delete from ..." />
-                    <marker date="1391704360257" expanded="true" signature="7216:7285" placeholder="delete from ..." />
+                    <element signature="e#5326#5346#0" expanded="true" />
+                    <element signature="e#5437#5446#0" expanded="true" />
+                    <element signature="e#5629#5642#0" expanded="true" />
+                    <element signature="e#6283#6293#0" expanded="true" />
+                    <element signature="e#7181#7201#0" expanded="true" />
+                    <element signature="e#7300#7309#0" expanded="true" />
+                    <element signature="e#7512#7525#0" expanded="true" />
+                    <element signature="e#8967#8989#0" expanded="true" />
+                    <marker date="1391709674821" expanded="true" signature="302:542" placeholder="create table..sale..." />
+                    <marker date="1391709674821" expanded="true" signature="597:805" placeholder="create table..purchased..." />
+                    <marker date="1391709674821" expanded="true" signature="947:985" placeholder="drop table i..." />
+                    <marker date="1391709674821" expanded="true" signature="1136:1161" placeholder="drop table i..." />
+                    <marker date="1391709674821" expanded="true" signature="2000:2068" placeholder="insert into ..." />
+                    <marker date="1391709674821" expanded="true" signature="2804:2843" placeholder="delete from ..." />
+                    <marker date="1391709674821" expanded="true" signature="3269:3362" placeholder="insert into ..." />
+                    <marker date="1391709674821" expanded="true" signature="4486:4620" placeholder="select sale_..sale..." />
+                    <marker date="1391709674821" expanded="true" signature="5074:5134" placeholder="select artic..purchased..." />
+                    <marker date="1391709674821" expanded="true" signature="6337:6420" placeholder="select sale_..sale..." />
+                    <marker date="1391709674821" expanded="true" signature="6903:6963" placeholder="select artic..purchased..." />
+                    <marker date="1391709674821" expanded="true" signature="8248:8287" placeholder="delete from ..." />
+                    <marker date="1391709674821" expanded="true" signature="8439:8530" placeholder="update sale ..." />
+                    <marker date="1391709674821" expanded="true" signature="9387:9457" placeholder="insert into ..." />
+                    <marker date="1391709674821" expanded="true" signature="10071:10135" placeholder="delete from ..." />
+                    <marker date="1391709674821" expanded="true" signature="10286:10355" placeholder="delete from ..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Singleton.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Singleton.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jbdd/Singleton.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="4" selection-start="117" selection-end="117" vertical-scroll-proportion="0.1661721">
+                <state line="13" column="25" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -178,8 +192,10 @@
           <file leaf-file-name="ClientManager.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jbdd/ClientManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="36" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
-                  <folding />
+                <state line="19" column="0" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -191,7 +207,7 @@
           <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jbdd/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+                <state line="214" column="0" selection-start="7254" selection-end="7254" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#2517#2531#0" expanded="true" />
@@ -199,10 +215,10 @@
                     <element signature="e#4773#4785#0" expanded="true" />
                     <element signature="e#5604#5617#0" expanded="true" />
                     <element signature="e#6260#6273#0" expanded="true" />
-                    <element signature="e#9238#9256#0" expanded="true" />
-                    <element signature="e#9313#9326#0" expanded="true" />
-                    <element signature="e#9776#10017#0" expanded="true" />
-                    <element signature="e#10006#10007#0" expanded="true" />
+                    <element signature="e#9322#9340#0" expanded="true" />
+                    <element signature="e#9397#9410#0" expanded="true" />
+                    <element signature="e#9860#10101#0" expanded="true" />
+                    <element signature="e#10090#10091#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -226,10 +242,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SaleBean.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="SaleBean.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jbdd/SaleBean.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="11" selection-start="373" selection-end="373" vertical-scroll-proportion="0.24454148">
+                <state line="16" column="11" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -244,34 +260,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BasketManager.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/jbdd/BasketManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="10" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#2509#2522#0" expanded="true" />
-                    <element signature="e#4618#4638#0" expanded="true" />
-                    <element signature="e#4729#4738#0" expanded="true" />
-                    <element signature="e#4922#4935#0" expanded="true" />
-                    <element signature="e#5582#5594#0" expanded="true" />
-                    <marker date="1391704137427" expanded="true" signature="337:496" placeholder="create table..basket..." />
-                    <marker date="1391704137427" expanded="true" signature="551:763" placeholder="create table..contains..." />
-                    <marker date="1391704137427" expanded="true" signature="905:942" placeholder="drop table i..." />
-                    <marker date="1391704137427" expanded="true" signature="1092:1127" placeholder="drop table i..." />
-                    <marker date="1391704137427" expanded="true" signature="1973:2014" placeholder="insert into ..." />
-                    <marker date="1391704137427" expanded="true" signature="2648:2688" placeholder="delete from ..." />
-                    <marker date="1391704137427" expanded="true" signature="3114:3210" placeholder="insert into ..." />
-                    <marker date="1391704137427" expanded="true" signature="3888:4005" placeholder="select baske..basket..." />
-                    <marker date="1391704137427" expanded="true" signature="4366:4427" placeholder="select artic..contains..." />
-                    <marker date="1391704137427" expanded="true" signature="5665:5693" placeholder="select baske..basket..." />
-                    <marker date="1391704137427" expanded="true" signature="6505:6570" placeholder="delete from ..." />
-                    <marker date="1391704137427" expanded="true" signature="6721:6789" placeholder="delete from ..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="ClientBean.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jbdd/ClientBean.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -281,11 +269,41 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Queryable.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/jbdd/Queryable.java">
+          <file leaf-file-name="BasketManager.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/jbdd/BasketManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="0" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-                  <folding />
+                <state line="254" column="23" selection-start="9612" selection-end="9612" vertical-scroll-proportion="0.7077465">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#createTable#0;class#BasketManager#0" expanded="false" />
+                    <element signature="method#create#0;class#BasketManager#0" expanded="false" />
+                    <element signature="e#2535#2548#0" expanded="true" />
+                    <element signature="method#read#0;class#BasketManager#0" expanded="false" />
+                    <element signature="e#4644#4664#0" expanded="true" />
+                    <element signature="e#4755#4764#0" expanded="true" />
+                    <element signature="e#4948#4961#0" expanded="true" />
+                    <element signature="e#5608#5620#0" expanded="true" />
+                    <element signature="e#6451#6471#0" expanded="true" />
+                    <element signature="e#6570#6579#0" expanded="true" />
+                    <element signature="e#6782#6795#0" expanded="true" />
+                    <element signature="e#8645#8667#0" expanded="true" />
+                    <marker date="1391708005001" expanded="true" signature="363:522" placeholder="create table..basket..." />
+                    <marker date="1391708005001" expanded="true" signature="577:789" placeholder="create table..contains..." />
+                    <marker date="1391708005001" expanded="true" signature="931:968" placeholder="drop table i..." />
+                    <marker date="1391708005001" expanded="true" signature="1118:1153" placeholder="drop table i..." />
+                    <marker date="1391708005001" expanded="true" signature="1999:2040" placeholder="insert into ..." />
+                    <marker date="1391708005001" expanded="true" signature="2674:2714" placeholder="delete from ..." />
+                    <marker date="1391708005001" expanded="true" signature="3140:3236" placeholder="insert into ..." />
+                    <marker date="1391708005001" expanded="true" signature="3914:4031" placeholder="select baske..basket..." />
+                    <marker date="1391708005001" expanded="true" signature="4392:4453" placeholder="select artic..contains..." />
+                    <marker date="1391708005001" expanded="true" signature="5664:5728" placeholder="select baske..basket..." />
+                    <marker date="1391708005001" expanded="true" signature="6172:6233" placeholder="select artic..contains..." />
+                    <marker date="1391708005001" expanded="true" signature="8058:8098" placeholder="delete from ..." />
+                    <marker date="1391708005001" expanded="true" signature="8249:8315" placeholder="update baske..." />
+                    <marker date="1391708005001" expanded="true" signature="9065:9136" placeholder="insert into ..." />
+                    <marker date="1391708005001" expanded="true" signature="9752:9817" placeholder="delete from ..." />
+                    <marker date="1391708005001" expanded="true" signature="9968:10036" placeholder="delete from ..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -310,7 +328,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/jbdd/OrderBean.java" />
         <option value="$PROJECT_DIR$/src/jbdd/OrderManager.java" />
         <option value="$PROJECT_DIR$/src/jbdd/ClientManager.java" />
         <option value="db-console:/a550cd8f/21a5cbdf-8082-4888-a351-d5e8e462d000/" />
@@ -319,13 +336,14 @@
         <option value="$PROJECT_DIR$/src/jbdd/ClientBean.java" />
         <option value="$PROJECT_DIR$/src/jbdd/CategoryBean.java" />
         <option value="$PROJECT_DIR$/src/jbdd/SaleBean.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/ArticleManager.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/BasketManager.java" />
         <option value="$PROJECT_DIR$/src/jbdd/CategoryManager.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/Main.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/Queryable.java" />
-        <option value="$PROJECT_DIR$/src/jbdd/SaleManager.java" />
         <option value="$PROJECT_DIR$/src/jbdd/Singleton.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/Main.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/ArticleManager.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/Queryable.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/BasketManager.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/SaleManager.java" />
+        <option value="$PROJECT_DIR$/src/jbdd/ArticleNotAvailableException.java" />
       </list>
     </option>
   </component>
@@ -626,7 +644,11 @@
       <created>1391672277115</created>
       <updated>1391672277115</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ca a l'avantage de marcher">
+      <created>1391704477421</created>
+      <updated>1391704477421</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -638,7 +660,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10492505" sideWeight="0.7829787" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10492505" sideWeight="0.67021275" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38510638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -646,16 +668,16 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15203427" sideWeight="0.7829787" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15203427" sideWeight="0.67021275" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21702127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4074468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -703,7 +725,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ca a l'avantage de marcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ca a l'avantage d'être moins dégueulasse" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -720,6 +742,7 @@
     <MESSAGE value="Quelques methodes en plus... Que c'est chiant, quand même..." />
     <MESSAGE value="Fix connection is closed SQLEXception" />
     <MESSAGE value="Ca a l'avantage de marcher" />
+    <MESSAGE value="Ca a l'avantage d'être moins dégueulasse" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -729,13 +752,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/libs/commons-dbcp-all-1.3-r699049.jar!/org/apache/commons/dbcp/PoolingDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="42" selection-start="3701" selection-end="3701" vertical-scroll-proportion="-5.24">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/commons-dbcp-all-1.3-r699049.jar!/org/apache/commons/dbcp/DelegatingResultSet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="15" selection-start="1714" selection-end="1714" vertical-scroll-proportion="-6.88">
@@ -750,84 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/ClientManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/ClientBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jbdd/CategoryBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/ArticleManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="10" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1391704238767" expanded="true" signature="335:625" placeholder="create table..article..." />
-            <marker date="1391704238767" expanded="true" signature="766:802" placeholder="drop table i..." />
-            <marker date="1391704238767" expanded="true" signature="1437:1584" placeholder="insert into ..." />
-            <marker date="1391704238767" expanded="true" signature="2568:2746" placeholder="select artic..article..." />
-            <marker date="1391704238767" expanded="true" signature="3575:3734" placeholder="select artic..article..." />
-            <marker date="1391704238767" expanded="true" signature="4730:5013" placeholder="update artic..." />
-            <marker date="1391704238767" expanded="true" signature="5751:5816" placeholder="delete from ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/BasketManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2509#2522#0" expanded="true" />
-            <element signature="e#4618#4638#0" expanded="true" />
-            <element signature="e#4729#4738#0" expanded="true" />
-            <element signature="e#4922#4935#0" expanded="true" />
-            <element signature="e#5582#5594#0" expanded="true" />
-            <marker date="1391704137427" expanded="true" signature="337:496" placeholder="create table..basket..." />
-            <marker date="1391704137427" expanded="true" signature="551:763" placeholder="create table..contains..." />
-            <marker date="1391704137427" expanded="true" signature="905:942" placeholder="drop table i..." />
-            <marker date="1391704137427" expanded="true" signature="1092:1127" placeholder="drop table i..." />
-            <marker date="1391704137427" expanded="true" signature="1973:2014" placeholder="insert into ..." />
-            <marker date="1391704137427" expanded="true" signature="2648:2688" placeholder="delete from ..." />
-            <marker date="1391704137427" expanded="true" signature="3114:3210" placeholder="insert into ..." />
-            <marker date="1391704137427" expanded="true" signature="3888:4005" placeholder="select baske..basket..." />
-            <marker date="1391704137427" expanded="true" signature="4366:4427" placeholder="select artic..contains..." />
-            <marker date="1391704137427" expanded="true" signature="5665:5693" placeholder="select baske..basket..." />
-            <marker date="1391704137427" expanded="true" signature="6505:6570" placeholder="delete from ..." />
-            <marker date="1391704137427" expanded="true" signature="6721:6789" placeholder="delete from ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2517#2531#0" expanded="true" />
-            <element signature="e#2774#2787#0" expanded="true" />
-            <element signature="e#4773#4785#0" expanded="true" />
-            <element signature="e#5604#5617#0" expanded="true" />
-            <element signature="e#6260#6273#0" expanded="true" />
-            <element signature="e#9238#9256#0" expanded="true" />
-            <element signature="e#9313#9326#0" expanded="true" />
-            <element signature="e#9776#10017#0" expanded="true" />
-            <element signature="e#10006#10007#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -845,16 +787,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/Queryable.java">
+    <entry file="file://$PROJECT_DIR$/src/jbdd/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+        <state line="13" column="25" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jbdd/ClientBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="58" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jbdd/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="0" selection-start="7254" selection-end="7254" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2517#2531#0" expanded="true" />
+            <element signature="e#2774#2787#0" expanded="true" />
+            <element signature="e#4773#4785#0" expanded="true" />
+            <element signature="e#5604#5617#0" expanded="true" />
+            <element signature="e#6260#6273#0" expanded="true" />
+            <element signature="e#9322#9340#0" expanded="true" />
+            <element signature="e#9397#9410#0" expanded="true" />
+            <element signature="e#9860#10101#0" expanded="true" />
+            <element signature="e#10090#10091#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jbdd/SaleBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="11" selection-start="373" selection-end="373" vertical-scroll-proportion="0.24454148">
+        <state line="16" column="11" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -874,33 +843,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/SaleManager.java">
+    <entry file="file://$PROJECT_DIR$/src/jbdd/ArticleManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
+        <state line="131" column="8" selection-start="4804" selection-end="4804" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#2665#2678#0" expanded="true" />
-            <marker date="1391704360257" expanded="true" signature="302:542" placeholder="create table..sale..." />
-            <marker date="1391704360257" expanded="true" signature="597:805" placeholder="create table..purchased..." />
-            <marker date="1391704360257" expanded="true" signature="947:985" placeholder="drop table i..." />
-            <marker date="1391704360257" expanded="true" signature="1136:1161" placeholder="drop table i..." />
-            <marker date="1391704360257" expanded="true" signature="2000:2068" placeholder="insert into ..." />
-            <marker date="1391704360257" expanded="true" signature="2804:2843" placeholder="delete from ..." />
-            <marker date="1391704360257" expanded="true" signature="3269:3362" placeholder="insert into ..." />
-            <marker date="1391704360257" expanded="true" signature="4262:4396" placeholder="select sale_..sale..." />
-            <marker date="1391704360257" expanded="true" signature="4850:4910" placeholder="select artic..purchased..." />
-            <marker date="1391704360257" expanded="true" signature="6140:6193" placeholder="select sale_..sale..." />
-            <marker date="1391704360257" expanded="true" signature="7001:7065" placeholder="delete from ..." />
-            <marker date="1391704360257" expanded="true" signature="7216:7285" placeholder="delete from ..." />
+            <element signature="imports" expanded="true" />
+            <marker date="1391708378564" expanded="true" signature="335:625" placeholder="create table..article..." />
+            <marker date="1391708378564" expanded="true" signature="766:802" placeholder="drop table i..." />
+            <marker date="1391708378564" expanded="true" signature="1437:1584" placeholder="insert into ..." />
+            <marker date="1391708378564" expanded="true" signature="2568:2746" placeholder="select artic..article..." />
+            <marker date="1391708378564" expanded="true" signature="3575:3734" placeholder="select artic..article..." />
+            <marker date="1391708378564" expanded="true" signature="4873:5156" placeholder="update artic..." />
+            <marker date="1391708378564" expanded="true" signature="5894:5959" placeholder="delete from ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jbdd/Singleton.java">
+    <entry file="file://$PROJECT_DIR$/src/jbdd/BasketManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="117" selection-end="117" vertical-scroll-proportion="0.1661721">
+        <state line="254" column="23" selection-start="9612" selection-end="9612" vertical-scroll-proportion="0.7077465">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createTable#0;class#BasketManager#0" expanded="false" />
+            <element signature="method#create#0;class#BasketManager#0" expanded="false" />
+            <element signature="e#2535#2548#0" expanded="true" />
+            <element signature="method#read#0;class#BasketManager#0" expanded="false" />
+            <element signature="e#4644#4664#0" expanded="true" />
+            <element signature="e#4755#4764#0" expanded="true" />
+            <element signature="e#4948#4961#0" expanded="true" />
+            <element signature="e#5608#5620#0" expanded="true" />
+            <element signature="e#6451#6471#0" expanded="true" />
+            <element signature="e#6570#6579#0" expanded="true" />
+            <element signature="e#6782#6795#0" expanded="true" />
+            <element signature="e#8645#8667#0" expanded="true" />
+            <marker date="1391708005001" expanded="true" signature="363:522" placeholder="create table..basket..." />
+            <marker date="1391708005001" expanded="true" signature="577:789" placeholder="create table..contains..." />
+            <marker date="1391708005001" expanded="true" signature="931:968" placeholder="drop table i..." />
+            <marker date="1391708005001" expanded="true" signature="1118:1153" placeholder="drop table i..." />
+            <marker date="1391708005001" expanded="true" signature="1999:2040" placeholder="insert into ..." />
+            <marker date="1391708005001" expanded="true" signature="2674:2714" placeholder="delete from ..." />
+            <marker date="1391708005001" expanded="true" signature="3140:3236" placeholder="insert into ..." />
+            <marker date="1391708005001" expanded="true" signature="3914:4031" placeholder="select baske..basket..." />
+            <marker date="1391708005001" expanded="true" signature="4392:4453" placeholder="select artic..contains..." />
+            <marker date="1391708005001" expanded="true" signature="5664:5728" placeholder="select baske..basket..." />
+            <marker date="1391708005001" expanded="true" signature="6172:6233" placeholder="select artic..contains..." />
+            <marker date="1391708005001" expanded="true" signature="8058:8098" placeholder="delete from ..." />
+            <marker date="1391708005001" expanded="true" signature="8249:8315" placeholder="update baske..." />
+            <marker date="1391708005001" expanded="true" signature="9065:9136" placeholder="insert into ..." />
+            <marker date="1391708005001" expanded="true" signature="9752:9817" placeholder="delete from ..." />
+            <marker date="1391708005001" expanded="true" signature="9968:10036" placeholder="delete from ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jbdd/SaleManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="266" column="0" selection-start="9933" selection-end="9933" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#2665#2678#0" expanded="true" />
+            <element signature="e#5326#5346#0" expanded="true" />
+            <element signature="e#5437#5446#0" expanded="true" />
+            <element signature="e#5629#5642#0" expanded="true" />
+            <element signature="e#6283#6293#0" expanded="true" />
+            <element signature="e#7181#7201#0" expanded="true" />
+            <element signature="e#7300#7309#0" expanded="true" />
+            <element signature="e#7512#7525#0" expanded="true" />
+            <element signature="e#8967#8989#0" expanded="true" />
+            <marker date="1391709674821" expanded="true" signature="302:542" placeholder="create table..sale..." />
+            <marker date="1391709674821" expanded="true" signature="597:805" placeholder="create table..purchased..." />
+            <marker date="1391709674821" expanded="true" signature="947:985" placeholder="drop table i..." />
+            <marker date="1391709674821" expanded="true" signature="1136:1161" placeholder="drop table i..." />
+            <marker date="1391709674821" expanded="true" signature="2000:2068" placeholder="insert into ..." />
+            <marker date="1391709674821" expanded="true" signature="2804:2843" placeholder="delete from ..." />
+            <marker date="1391709674821" expanded="true" signature="3269:3362" placeholder="insert into ..." />
+            <marker date="1391709674821" expanded="true" signature="4486:4620" placeholder="select sale_..sale..." />
+            <marker date="1391709674821" expanded="true" signature="5074:5134" placeholder="select artic..purchased..." />
+            <marker date="1391709674821" expanded="true" signature="6337:6420" placeholder="select sale_..sale..." />
+            <marker date="1391709674821" expanded="true" signature="6903:6963" placeholder="select artic..purchased..." />
+            <marker date="1391709674821" expanded="true" signature="8248:8287" placeholder="delete from ..." />
+            <marker date="1391709674821" expanded="true" signature="8439:8530" placeholder="update sale ..." />
+            <marker date="1391709674821" expanded="true" signature="9387:9457" placeholder="insert into ..." />
+            <marker date="1391709674821" expanded="true" signature="10071:10135" placeholder="delete from ..." />
+            <marker date="1391709674821" expanded="true" signature="10286:10355" placeholder="delete from ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jbdd/ArticleNotAvailableException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.05436893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jbdd/ClientManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jbdd/Queryable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="24" selection-start="392" selection-end="392" vertical-scroll-proportion="0.22183098">
+          <folding />
         </state>
       </provider>
     </entry>

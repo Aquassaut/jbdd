@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class BasketManager implements Queryable<BasketBean>  {
@@ -159,16 +160,46 @@ public class BasketManager implements Queryable<BasketBean>  {
     @Override
     public List<BasketBean> readAll(Connection conn) {
         List<BasketBean> lbb = new ArrayList<BasketBean>();
-        ResultSet outerRs;
         try {
-            String sql = "select basket_id from basket";
+            String sql = "select basket_id, client_id " +
+                    "from basket";
             _pstm = conn.prepareStatement(sql);
-            outerRs = _pstm.executeQuery();
-            while (outerRs.next()) {
-                lbb.add(this.read(conn, outerRs.getInt(1)));
+            _rs = _pstm.executeQuery();
+
+            while (_rs.next()) {
+                BasketBean table = new BasketBean();
+                table.set_id(_rs.getInt(1));
+                table.set_client(_rs.getInt(2));
+
+                lbb.add(table);
+            }
+            // deux boucles pour pouvoir réutiliser le _rs
+            for (BasketBean table : lbb) {
+                sql = "select article_id, quantity from contains where basket_id = ?";
+                _pstm = conn.prepareStatement(sql);
+                _pstm.setInt(1, table.get_id());
+                _rs = _pstm.executeQuery();
+                ArrayList<ArrayList<Integer>> articles = new ArrayList<ArrayList<Integer>>();
+                while (_rs.next()) {
+                    ArrayList<Integer> art = new ArrayList<Integer>();
+                    art.add(_rs.getInt(1));
+                    art.add(_rs.getInt(2));
+                    articles.add(art);
+                }
+
+                List<ArticleBean> lab = new ArrayList<ArticleBean>();
+                ArticleManager am = new ArticleManager();
+
+                for (ArrayList<Integer> articlePair : articles) {
+                    ArticleBean ab = am.read(conn, articlePair.get(0));
+                    for (int i = 0; i < articlePair.get(1); i += 1) {
+                        lab.add(ab);
+                    }
+                }
+                table.set_articles(lab);
             }
         } catch (Exception e) {
-            System.err.println("Problem encountered reading all baskets");
+            System.err.println("Problem encountered reading a basket");
             e.printStackTrace();
         }
         return lbb;
@@ -176,11 +207,52 @@ public class BasketManager implements Queryable<BasketBean>  {
 
     @Override
     public int update(Connection conn, int key, BasketBean table) {
-        // WOOHOO dégueulasse.
-        // TODO: refaire ça : on a la mauvaise valeur de retour et
-        // on fait trop d'appels sql
-        this.delete(conn, key);
-        return this.create(conn, table);
+        int affected = -1;
+        try {
+            //Pas de clé primaire propre à la table contains, on peut se permettre de
+            //supprimer/recréer, ce qui évite de devoir query, voir les différences et
+            //delete/insert/update de façon conditionnelle. C'est pas le mega top, vu
+            //que le nombre de rows affected est pas le plus opti ni le plus significatif
+
+            //On va supprimer de contains, updater le basket et reformer le contains, pour
+            //pas avoir de problème de contrainte entre contains.id_basket et basket.id_basket
+
+            String sql = "delete from contains where basket_id = ?";
+            _pstm = conn.prepareStatement(sql);
+            _pstm.setInt(1, key);
+            affected = _pstm.executeUpdate();
+
+            sql = "update basket set basket_id = ?, client_id = ? where basket_id = ?";
+            _pstm = conn.prepareStatement(sql);
+            int i = 0;
+            _pstm.setInt(++i, table.get_id());
+            _pstm.setInt(++i, table.get_client());
+            _pstm.setInt(++i, key);
+            affected += _pstm.executeUpdate();
+
+            HashMap<ArticleBean, Integer> articleAndQuantity = new HashMap<ArticleBean, Integer>();
+            for (ArticleBean ab : table.get_articles()) {
+                if (!articleAndQuantity.containsKey(ab)) {
+                    articleAndQuantity.put(ab, 1);
+                } else {
+                    articleAndQuantity.put(ab, articleAndQuantity.get(ab) + 1);
+                }
+            }
+
+            for (ArticleBean ab : articleAndQuantity.keySet()) {
+                sql = "insert into contains (basket_id, article_id, quantity) values (?, ?, ?)";
+                _pstm = conn.prepareStatement(sql);
+                i = 0;
+                _pstm.setInt(++i, table.get_id());
+                _pstm.setInt(++i, ab.get_id());
+                _pstm.setInt(++i, articleAndQuantity.get(ab));
+                affected += _pstm.executeUpdate();
+            }
+        } catch (Exception e) {
+            System.err.println("Problem encountered updating a basket");
+            e.printStackTrace();
+        }
+        return affected;
     }
 
     @Override
