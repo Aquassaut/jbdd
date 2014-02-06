@@ -73,11 +73,9 @@ public class Main {
             conn.close();
             conn = Singleton.DS.getConnection();
             BasketBean bb1 = createBasketUser1(bm, conn, lub, lab);
-            //BasketBean bb2 = createBasketUser2(bm, conn, lub, lab);
-
-            Thread.sleep(5);
+            BasketBean bb2 = createBasketUser2(bm, conn, lub, lab);
+            editBasketUser2(bm, conn, bb2, lab);
             /*
-            editBasketUser2();
             displayBasketUser1();
             displayBasketUser2();
             validateBasketUser2();
@@ -199,8 +197,6 @@ public class Main {
             System.err.println("Clients !");
             e.printStackTrace();
         }
-        System.out.println("Wesh tout va bien !");
-
         return lub;
     }
     public static BasketBean createBasketUser1(BasketManager bm,
@@ -216,15 +212,14 @@ public class Main {
 
         bb1.set_articles(articles);
         bm.create(conn, bb1);
-        //try {
+        try {
             conn.commit();
-        //} catch (Exception e) {
-        //    System.err.println("Basket !");
-        //    e.printStackTrace();
-       // }
+        } catch (Exception e) {
+            System.err.println("Basket !");
+            e.printStackTrace();
+        }
         return bb1;
     }
-
     public static BasketBean createBasketUser2(BasketManager bm,
                Connection conn, List<ClientBean> lub, List<ArticleBean> lab) {
         BasketBean bb2 = new BasketBean();
@@ -245,5 +240,9 @@ public class Main {
             e.printStackTrace();
         }
         return bb2;
+    }
+
+    public static void editBasketUser2(BasketManager bm, Connection conn, BasketBean bb2, List<ArticleBean> lab) {
+        //pass
     }
 }

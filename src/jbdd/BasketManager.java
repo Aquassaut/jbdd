@@ -113,12 +113,7 @@ public class BasketManager implements Queryable<BasketBean>  {
             System.err.println("Problem encountered inserting a basket with ID " + table.get_id());
             System.err.println(lastStep);
             e.printStackTrace();
-        } finally {
-            try {
-                conn.close();
-            } catch (Exception ignore) {}
         }
-
         return res;
     }
 

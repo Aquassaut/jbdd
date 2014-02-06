@@ -17,7 +17,7 @@ public class ArticleManager implements Queryable<ArticleBean> {
             "article_id serial PRIMARY KEY, " +
             "article_name varchar(20)," +
             "article_availability int, " +
-            "article_price real, " +
+            "article_price numeric(5), " +
             "category_id integer references category(category_id))";
 
     public boolean createTable(Connection conn) {
